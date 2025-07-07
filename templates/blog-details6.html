@@ -1,0 +1,259 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Pet Details - Paw Paradise Pet Shop</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/logo.png' %}" rel="icon">
+  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Marcellus:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: AgriCulture
+  * Template URL: https://bootstrapmade.com/agriculture-bootstrap-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="blog-details-page">
+
+  <header id="header" class="header d-flex align-items-center position-relative">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'home' %}" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="{% static 'assets/img/logo.png' %}" alt="AgriCulture">
+        <!-- <h1 class="sitename">AgriCulture</h1>  -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'about' %}" class="active">About Us</a></li>
+          <li><a href="{% url 'services' %}">Our Services</a></li>
+          <li><a href="{% url 'store' %}">Store</a></li>
+          <li><a href="{% url 'blog' %}">Available Pets</a></li>
+ 
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);">
+      <div class="container position-relative">
+        <h1>Pet Details</h1>
+        <p>🐭 Rats – Smart, curious, and affectionate, pet rats are highly trainable and form strong bonds with their owners! </p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Pet Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->S
+
+ 
+    <div class="container">
+        
+ 
+
+      <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="tab-pane fade active show" id="menu-starters">
+
+          <div class="tab-header text-center">
+             
+            <h3>Mouse/Rats Breeds</h3>
+          </div>
+<br>
+          <div class="row gy-5">
+
+            <div class="col-lg-4 menu-item">
+               <img src="{% static 'assets/img/menu/401.jpg' %}" class="menu-img img-fluid" alt=""></a><br><br>
+              <h4>Hooded Rat</h4>
+              <p class="ingredients">
+                With their distinctive hood of color around their heads, Hooded rats are intelligent, active, and affectionate.
+              </p>
+              <p class="price">
+                ₹1,000
+              </p>
+            </div><!-- Menu Item -->
+
+            <div class="col-lg-4 menu-item">
+              <img src="{% static 'assets/img/menu/402.jpg' %}" class="menu-img img-fluid" alt=""></a><br><br>
+              <h4>White Mouse</h4>
+              <p class="ingredients">
+                As their name suggests, Hairless rats have little to no hair, making them a great choice for those with allergies.
+              </p>
+              <p class="price">
+                ₹1,200 
+              </p>
+            </div><!-- Menu Item -->
+
+            <div class="col-lg-4 menu-item">
+               <img src="{% static 'assets/img/menu/403.jpg' %}" class="menu-img img-fluid" alt=""></a><br><br>
+              <h4>Standard Rat</h4>
+              <p class="ingredients">
+                Also known as "pet rats," Standard rats are friendly, outgoing, and come in a variety of colors.
+              </p>
+              <p class="price">
+                ₹800
+              </p>
+            </div><!-- Menu Item -->
+
+            <div class="col-lg-4 menu-item">
+              <img src="{% static 'assets/img/menu/404.jpg' %}" class="menu-img img-fluid" alt=""></a><br><br>
+              <h4>Sphynx Rat</h4>
+              <p class="ingredients">
+                Similar to Hairless rats, Sphynx rats have little to no hair, making them a great choice for those with allergies.
+              </p>
+              <p class="price">
+                ₹1,200
+              </p>
+            </div><!-- Menu Item -->
+
+            <div class="col-lg-4 menu-item">
+              <img src="{% static 'assets/img/menu/405.jpg' %}" class="menu-img img-fluid" alt=""></a><br><br>
+              <h4>Rex Rat</h4>
+              <p class="ingredients">
+                With their unique, curly coat, Rex rats are friendly, curious, and loving.
+              </p>
+              <p class="price">
+                ₹1,000
+              </p>
+            </div><!-- Menu Item -->
+
+            <div class="col-lg-4 menu-item">
+              <img src="{% static 'assets/img/blog/rat4.jpg' %}" class="menu-img img-fluid" alt=""></a><br><br>
+              <h4>Velveteen Mouse</h4>
+              <p class="ingredients">
+                Known for their soft, velvety coat, Velveteen rats are friendly, outgoing, and make great pets.
+              </p>
+              <p class="price">
+                ₹1,000
+              </p>
+            </div><!-- Menu Item -->
+
+          </div>
+        </div>
+        <!-- End Starter Menu Content -->
+<br>
+  </main>
+  <footer id="footer" class="footer dark-background">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">PawParadise</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <p>Abasaheb pawar nagar lane no.2,Old Sangvi</p>
+              <p>Pune - 411027, India</p>
+              <p class="mt-3"><strong>Phone:</strong> <span>+91 9730570676</span></p>
+              <p><strong>Email:</strong> <span>burleshantanu@gmail.com</span></p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Product Management</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+           
+
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright text-center">
+      <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div>
+            © Copyright <strong><span>MyWebsite</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/herobiz-bootstrap-business-template/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+        <h3>FOLLOW US ON</h3>
+        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+          <a href="https://www.facebook.com/shantanu.burle.34" target="_blank"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/__shantanu__sb__/" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/shantanu-burle-178434216/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

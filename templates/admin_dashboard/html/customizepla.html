@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Select Images</title>
+  <style>
+    .img-card {
+      display: inline-block;
+      margin: 10px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: border 0.3s ease;
+    }
+
+    .img-card:hover {
+      border: 2px solid blue;
+    }
+
+    img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Select Your Images:</h2>
+
+  <div class="col-lg-8">
+    <div class="row">
+      {% for x in messages %}
+          <center>
+          <h5> 
+          
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+               <strong style="color:green;">{{x}}</strong>
+              <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+                              
+          </h5>
+          </center>
+      {% endfor %}
+  </div>
+
+  <form method="POST" action="{% url 'customizeplan' %}">
+    {% csrf_token %}
+
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Contact No." name="phoneno" required>
+    </div>
+    <div class="form-group">
+      <input type="checkbox" name="subscribe" value="chest/chestbbp.gif">
+    </div>
+
+
+    
+
+    <br><br>
+    <button type="submit">Submit Selection</button>
+  </form>
+
+  
+
+</body>
+</html>
