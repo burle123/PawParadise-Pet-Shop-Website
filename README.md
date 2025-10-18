@@ -1,1 +1,1 @@
-# College-Dekho-Website
+# Django Based PetShop Website
